@@ -12,5 +12,69 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="Categories"
+        android:id="@+id/categories_label" />
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:padding="0dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/kathy_final"
+        android:id="@+id/people_button"
+        android:layout_marginTop="48dp"
+        android:layout_below="@+id/categories_label"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="37dp"
+        android:layout_marginStart="37dp" />
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:padding="0dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/sheep_final"
+        android:id="@+id/animals_button"
+        android:layout_marginRight="54dp"
+        android:layout_marginEnd="54dp"
+        android:layout_alignTop="@+id/people_button"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:padding="0dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/crops_final"
+        android:id="@+id/crops_button"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/people_button"
+        android:layout_alignStart="@+id/people_button" />
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:padding="0dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/house_final"
+        android:id="@+id/upgrades_button"
+        android:layout_alignTop="@+id/crops_button"
+        android:layout_alignLeft="@+id/animals_button"
+        android:layout_alignStart="@+id/animals_button" />
+
+    <ImageButton
+        android:layout_width="600dp"
+        android:layout_height="100dp"
+        android:padding="0dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/harvest_sprites_final"
+        android:id="@+id/story_button"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/crops_button"
+        android:layout_alignRight="@+id/upgrades_button"
+        android:layout_alignEnd="@+id/upgrades_button"
+        android:layout_alignLeft="@+id/crops_button"
+        android:layout_alignStart="@+id/crops_button" />
 </RelativeLayout>
