@@ -50,7 +50,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
                 break;
 
             case R.id.upgrades_button:
-                intent = new Intent(this, ScrollingActivity.class);
+                intent = new Intent(this, UpgradesActivity.class);
                 break;
             case R.id.story_button:
                 intent = new Intent(this, StoryActivity.class);

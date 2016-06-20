@@ -16,13 +16,11 @@
             </intent-filter>
         </activity>
         <activity android:name=".PeopleActivity" />
-        <activity
-            android:name=".ScrollingActivity"
-            android:label="@string/title_activity_scrolling"
-            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".AnimalsActivity" />
         <activity android:name=".CropsActivity" />
-        <activity android:name=".StoryActivity"></activity>
+        <activity android:name=".StoryActivity" />
+        <activity android:name=".PersonActivity" />
+        <activity android:name=".UpgradesActivity"></activity>
     </application>
 
 </manifest>
