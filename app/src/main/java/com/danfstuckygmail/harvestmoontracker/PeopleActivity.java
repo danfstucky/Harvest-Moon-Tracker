@@ -15,6 +15,7 @@ import java.util.ArrayList;
 public class PeopleActivity extends AppCompatActivity {
 
     private static  final int REQUEST_CODE_PEOPLE = 1;
+    private static final String ACTIVITY_TYPE = "PEOPLE";
     private ExpandableListAdapter expAdapter;
     private ArrayList<Group> expListItems;
     private ExpandableListView expandList;
@@ -57,19 +58,19 @@ public class PeopleActivity extends AppCompatActivity {
             ArrayList<Child> ch_list = new ArrayList<Child>();
             if (group_name == PeopleEnum.PeopleCategories.BACHELORS) {
                 for (PeopleEnum.Bachelors bachelor : PeopleEnum.Bachelors.values()) {
-                    Child child = new Child(PeopleActivity.this, bachelor.getName());
+                    Child child = new Child(PeopleActivity.this, bachelor.getName(), ACTIVITY_TYPE);
                     ch_list.add(child);
                 }
             }
             else if (group_name == PeopleEnum.PeopleCategories.BACHELORETTES) {
                 for (PeopleEnum.Bachelorettes bachelorette : PeopleEnum.Bachelorettes.values()) {
-                    Child child = new Child(PeopleActivity.this, bachelorette.getName());
+                    Child child = new Child(PeopleActivity.this, bachelorette.getName(), ACTIVITY_TYPE);
                     ch_list.add(child);
                 }
             }
-            if (group_name == PeopleEnum.PeopleCategories.VILLAGERS) {
+            else if (group_name == PeopleEnum.PeopleCategories.VILLAGERS) {
                 for (PeopleEnum.Villagers villager : PeopleEnum.Villagers.values()) {
-                    Child child = new Child(PeopleActivity.this, villager.getName());
+                    Child child = new Child(PeopleActivity.this, villager.getName(), ACTIVITY_TYPE);
                     ch_list.add(child);
                 }
             }

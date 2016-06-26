@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/product_name"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/decent_value"
+        android:gravity="right"
+        android:textStyle="normal"/>
+    <TextView
+        android:id="@+id/good_value"
+        android:gravity="right"
+        android:textStyle="normal"/>
+    <TextView
+        android:id="@+id/perfect_value"
+        android:gravity="right"
+        android:textStyle="normal"/>
+    <TextView
+        android:id="@+id/shining_value"
+        android:gravity="right"
+        android:textStyle="normal"/>
+
+</TableRow>

@@ -10,38 +10,11 @@
     android:orientation="vertical"
     tools:context="com.danfstuckygmail.harvestmoontracker.PeopleActivity" >
 
-    <!-- Use expandablelistview -->
-
     <ExpandableListView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/people_exp_list">
 
     </ExpandableListView>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Bachelorettes"
-        android:id="@+id/bachelorette_label" />
-
-    <ListView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/bachelorette_listView"
-        android:background="#B29090" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Bachelors"
-        android:id="@+id/bachelor_label" />
-
-    <ListView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/bachelor_listView"
-        android:background="#4A9C67" />
 
 </LinearLayout>

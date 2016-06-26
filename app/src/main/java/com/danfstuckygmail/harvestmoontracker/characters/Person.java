@@ -7,7 +7,7 @@ import android.os.Parcelable;
 /**
  * Created by Dan on 6/17/2016.
  */
-public class Person implements Parcelable {
+public class Person {
     private String type;
     private String name;
     private String info;
@@ -21,48 +21,6 @@ public class Person implements Parcelable {
     public Person(String type, String name) {
         this.type = type;
         this.name = name;
-    }
-
-    protected Person(Parcel in) {
-        type = in.readString();
-        name = in.readString();
-        info = in.readString();
-        birthday = in.readString();
-        bestGifts = in.createStringArray();
-        goodGifts = in.createStringArray();
-        badGifts = in.createStringArray();
-        rival = in.readString();
-        heartGifts = in.createStringArray();
-    }
-
-    public static final Creator<Person> CREATOR = new Creator<Person>() {
-        @Override
-        public Person createFromParcel(Parcel in) {
-            return new Person(in);
-        }
-
-        @Override
-        public Person[] newArray(int size) {
-            return new Person[size];
-        }
-    };
-
-    @Override
-    public int describeContents() {
-        return 0;
-    }
-
-    @Override
-    public void writeToParcel(Parcel dest, int flags) {
-        dest.writeString(type);
-        dest.writeString(name);
-        dest.writeString(info);
-        dest.writeString(birthday);
-        dest.writeArray(bestGifts);
-        dest.writeArray(goodGifts);
-        dest.writeArray(badGifts);
-        dest.writeString(rival);
-        dest.writeArray(heartGifts);
     }
 
     public String getType() {

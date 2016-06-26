@@ -14,7 +14,6 @@ public class PeopleList {
         this.bachelors_list = new BachelorData().getBachelors();
         this.bachelorettes_list = new BacheloretteData().getBachelorettes();
         this.villagers_list = new VillagerData().getVillagers();
-        System.out.println("Created People list.");
     }
 
     public static PeopleList instance() {

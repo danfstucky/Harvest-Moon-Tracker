@@ -20,7 +20,10 @@
         <activity android:name=".CropsActivity" />
         <activity android:name=".StoryActivity" />
         <activity android:name=".PersonActivity" />
-        <activity android:name=".UpgradesActivity"></activity>
+        <activity android:name=".UpgradesActivity" />
+        <activity android:name=".animals.FarmAnimalActivity" />
+        <activity android:name=".animals.PetActivity" />
+        <activity android:name=".animals.CircusAnimalActivity"></activity>
     </application>
 
 </manifest>

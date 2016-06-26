@@ -92,6 +92,10 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter {
         } catch (Resources.NotFoundException e) {
             iv.setImageResource(R.drawable.no_image);
         }
+        if (child.getActivityGroup().equals("ANIMALS")) {
+            iv.getLayoutParams().height = 200;
+            iv.getLayoutParams().width = 230;
+        }
 
         return convertView;
     }
