@@ -4,7 +4,7 @@ package com.danfstuckygmail.harvestmoontracker.animals;
  * Created by Dan on 6/23/2016.
  */
 public class FarmData {
-    private String type = AnimalGroups.FARMANIMALS.getName();
+    private final String type = AnimalGroups.FARMANIMALS.getName();
     private Farm[] farm_animals;
 
     public FarmData() {

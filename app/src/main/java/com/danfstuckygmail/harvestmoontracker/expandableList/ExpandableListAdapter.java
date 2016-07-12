@@ -96,6 +96,10 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter {
             iv.getLayoutParams().height = 200;
             iv.getLayoutParams().width = 230;
         }
+        else if (child.getActivityGroup().equals("CROPS")) {
+            iv.getLayoutParams().height = 150;
+            iv.getLayoutParams().width = 150;
+        }
 
         return convertView;
     }

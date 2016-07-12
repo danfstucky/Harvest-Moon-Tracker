@@ -11,7 +11,6 @@ import android.widget.TableRow;
 import android.widget.TextView;
 
 import com.danfstuckygmail.harvestmoontracker.R;
-import com.danfstuckygmail.harvestmoontracker.characters.PeopleEnum;
 
 import java.util.Map;
 
