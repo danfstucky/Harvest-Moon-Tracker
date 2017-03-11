@@ -56,7 +56,6 @@ public class FarmAnimalActivity extends AppCompatActivity {
         TableLayout table = (TableLayout) findViewById(R.id.animal_product_table);
         if (!mAnimal.getSales().isEmpty()) {
             for (Map.Entry<String, String[]> entry : mAnimal.getSales().entrySet()) {
-                System.out.println("key: " + entry.getKey() + " / Value: " + entry.getValue()[0]);
                 // Inflate row "template" and fill out the fields.
                 TableRow row = (TableRow) LayoutInflater.from(FarmAnimalActivity.this).inflate(R.layout.animal_table_row, null);
                 ((TextView) row.findViewById(R.id.product_name)).setText(entry.getKey());

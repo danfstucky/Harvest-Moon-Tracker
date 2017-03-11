@@ -37,7 +37,7 @@ public class Crop {
         this.days = days;
     }
 
-    public String isRegrows() {
+    public String getRegrows() {
         return regrows;
     }
 

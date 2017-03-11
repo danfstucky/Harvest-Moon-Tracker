@@ -21,7 +21,7 @@ public class SummerCropData {
         corn.setSeeds("100 G at Marimba Farm, Lv 2");
         corn.setDays("5 to 9 days");
         corn.setRegrows("Yes");
-        corn.setSales(new String[]{ "160 G", "1900 G", "210 G", "310 G" });
+        corn.setSales(new String[]{ "160 G", "190 G", "210 G", "310 G" });
 
         // Cucumber
         Crop cucumber = new Crop("Cucumber", season);

@@ -22,11 +22,9 @@
             android:scaleType="fitXY"
             android:src="@drawable/wheat"
             android:id="@+id/crop_imageView"
-            android:layout_marginRight="21dp"
-            android:layout_marginEnd="21dp"
             android:layout_alignParentTop="true"
-            android:layout_toLeftOf="@+id/crop_name"
-            android:layout_toStartOf="@+id/crop_name" />
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -35,13 +33,156 @@
             android:text="Crop"
             android:id="@+id/crop_name"
             android:paddingLeft="8dp"
-            android:textSize="30sp"
-            android:layout_marginRight="113dp"
-            android:layout_marginEnd="113dp"
+            android:textSize="28sp"
             android:layout_marginBottom="29dp"
             android:layout_alignBottom="@+id/crop_imageView"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true" />
+            android:layout_toRightOf="@+id/crop_imageView"
+            android:layout_marginLeft="18dp"
+            android:layout_marginStart="18dp"
+            android:layout_alignRight="@+id/crop_prices_table"
+            android:layout_alignEnd="@+id/crop_prices_table" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Seeds:"
+            android:id="@+id/crop_seeds_label"
+            android:layout_below="@+id/crop_imageView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="30dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Days:"
+            android:id="@+id/crop_days_label"
+            android:layout_below="@+id/crop_seeds_label"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Regrows:"
+            android:id="@+id/crop_regrows_label"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/crop_days_label"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Prices:"
+            android:id="@+id/crop_prices_label"
+            android:textStyle="bold"
+            android:layout_below="@+id/crop_regrows_label"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="seeds"
+            android:id="@+id/crop_seeds_text"
+            android:layout_marginLeft="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_alignTop="@+id/crop_seeds_label"
+            android:layout_toRightOf="@+id/crop_regrows_label"
+            android:layout_toEndOf="@+id/crop_regrows_label" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="days"
+            android:id="@+id/crop_days_text"
+            android:layout_alignTop="@+id/crop_days_label"
+            android:layout_alignLeft="@+id/crop_seeds_text"
+            android:layout_alignStart="@+id/crop_seeds_text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="regrows"
+            android:id="@+id/crop_regrows_text"
+            android:layout_alignTop="@+id/crop_regrows_label"
+            android:layout_alignLeft="@+id/crop_days_text"
+            android:layout_alignStart="@+id/crop_days_text" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/crop_prices_table"
+            android:layout_below="@+id/crop_prices_label"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp">
+
+            <TableRow
+                android:id="@+id/tableRow_header"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:weightSum="100">
+                <TextView
+                    android:id="@+id/decent_value_header"
+                    android:text="Decent"
+                    android:textStyle="bold"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:paddingTop="10dp"
+                    android:textSize="16sp"
+                    android:background="#3f51b5"
+                    android:textColor="#FFFFFF"/>
+                <TextView
+                    android:id="@+id/good_value_header"
+                    android:text="Good"
+                    android:textStyle="bold"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:paddingTop="10dp"
+                    android:textSize="16sp"
+                    android:background="#3f51b5"
+                    android:textColor="#FFFFFF"/>
+                <TextView
+                    android:id="@+id/perfect_value_header"
+                    android:text="Perfect"
+                    android:textStyle="bold"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:paddingTop="10dp"
+                    android:textSize="16sp"
+                    android:background="#3f51b5"
+                    android:textColor="#FFFFFF"/>
+                <TextView
+                    android:id="@+id/shining_value_header"
+                    android:text="Shining"
+                    android:textStyle="bold"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:paddingTop="10dp"
+                    android:textSize="16sp"
+                    android:background="#3f51b5"
+                    android:textColor="#FFFFFF"/>
+
+            </TableRow>
+        </TableLayout>
 
     </RelativeLayout>
 </ScrollView>

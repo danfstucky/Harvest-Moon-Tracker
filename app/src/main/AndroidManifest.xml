@@ -25,7 +25,8 @@
         <activity android:name=".animals.PetActivity" />
         <activity android:name=".animals.CircusAnimalActivity" />
         <activity android:name=".story.BellActivity" />
-        <activity android:name=".crops.SingleCropActivity"></activity>
+        <activity android:name=".crops.SingleCropActivity" />
+        <activity android:name=".upgrades.UpgradeTypeActivity"></activity>
     </application>
 
 </manifest>
